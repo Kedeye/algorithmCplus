@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1644704976 source:d:\language c++ proje\tableau_croissant\main.cpp
+	<iostream>
+
+1647802881 source:d:\language programming\language c++ proje\les tableaux\tableau_croissant\main.cpp
+	<iostream>
+	<vector>
+

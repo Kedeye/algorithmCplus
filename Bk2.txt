@@ -1,0 +1,177 @@
+
+-------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int T[50];
+    int N;
+    int i;
+    long SOM;
+    cout << "Tape La Numero Du Tablaeux : " << endl;
+    cin>> N;
+
+        for(i=0; i<N ; i++){
+            cout<<"Element : "<<i<<endl;
+            cin>>T[i];
+        }
+        for(i=0 ; i<N ; i++){
+            cout<<T[i];
+        }
+        cout<<endl;
+        for(i=0 ; i<N ; i++);
+
+            SOM += T[i];
+        cout<<"Somme Des Element: "<<SOM<<endl;
+
+    return 0;
+}
+
+
+-------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+int scane(int N){
+    if(N==0)
+        return 0;
+    else
+        return N + scane(N-1);
+}
+int main(){
+    int N;
+    cout<<"saisir un number : "<<endl;
+    cin>>N;
+    cout<<"la somme de 1 jusqua "<<N<<" est : "<<scane(N);
+
+    return 0;
+}
+
+-------------------------------------------------------------------------------
+#include <iostream>
+
+using namespace std;
+int pgcd (int a , int b){
+    if(b==0)
+        return a ;
+    else
+        return pgcd(b,a%b);
+}
+
+int main()
+{
+    int a,b;
+    cout << "saisir la premier valeur : " << endl;
+    cin>> a;
+    cout << "saisir la deuxiem valeur : " << endl;
+    cin>> b;
+    cout<< "la pgcd enter "<<a<<" et "<<b <<" est : "<< pgcd(a,b)<<endl;
+    cout<< "la ppcm enter "<<a<<" et "<<b <<" est : "<<((a*b)/pgcd(a,b))<<endl;
+
+    return 0;
+}
+
+------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+int binaire (int n){
+    if(n!=0){
+        binaire(n/2);
+        cout<<n%2;
+    }
+}
+
+int main()
+{
+    int n ;
+    cout << "saisir la valuer de n " << endl;
+    cin>> n;
+    cout<<"le number binair de "<<n<<" est: "<<endl;
+    binaire(n);
+
+    return 0;
+}
+
+----------------------------------------------------------------------------
+#include <iostream>
+
+using namespace std;
+int puissance (int X , int n){
+    if(n==0)
+        return 1 ;
+    else
+        return X * puissance(X , n-1);
+    }
+int main()
+{
+    int X , n ;
+    cout << "saisir un  la valeur de X : " << endl;
+    cin>> X;
+    cout << "saisir un la valeur de n : " <<endl;
+    cin>> n;
+    cout<<" la puissance de "<<X<<" puissance "<<n<<" est : "<<puissance(X,n);
+
+    return 0;
+}
+
+-------------------------------------------------------
+#include <iostream>
+
+using namespace std;
+
+int croissant (int n ){
+    if(n!=0){
+        croissant(n-1);
+        cout<<n;
+
+    }
+}
+int decroissant (int n){
+    if(n!=0){
+        cout<<n;
+        decroissant(n-1);
+    }
+}
+
+int main()
+{
+    int n ;
+    cout << "saisir un valeur svp " << endl;
+    cin>> n;
+    croissant(n);
+    cout<<endl;
+    cout<<decroissant(n);
+    return 0;
+}
+
+
+---------------------------------------------------------------
+#include <iostream>
+
+using namespace std;
+int factoriel (int N){
+    int F,i;
+    if(N==0 || N==1)
+        F=1;
+    else{
+        F=1;
+        for(i=2 ; i<=N ; i++)
+            F=i*F;
+        }
+        return F;
+}
+
+int main()
+{
+    int N;
+    cout<<"saisir un Number svp :"<<endl;
+    cin>>N;
+    cout << "la factoriel de "<<N<<" est : "<<factoriel(N)<<endl;
+    return 0;
+}

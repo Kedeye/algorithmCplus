@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1637961210 source:d:\language c++ proje\test\tableaux-test\main.cpp
+	<iostream>
+	<vector>
+
+1644691201 source:d:\language c++ proje\tableaux\main.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<vector>
+
+1644692189 source:d:\language programming\language c++ proje\les tableaux\tableaux_element_su_in_egal\main.cpp
+	<iostream>
+

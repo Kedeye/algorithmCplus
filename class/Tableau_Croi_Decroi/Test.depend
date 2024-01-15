@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1643159818 source:d:\language c++ proje\test\test\main.cpp
+	<iostream>
+
+1644703292 source:d:\language c++ proje\les tableaux\tableau_croi_decroi\main.cpp
+	<iostream>
+
+1646342906 source:d:\language programming\language c++ proje\les tableaux\tableau_croi_decroi\main.cpp
+	<iostream>
+
+1646348286 source:d:\language programming\language c++ proje\class\tableau_croi_decroi\main.cpp
+	<iostream>
+	<vector>
+	<string.h>
+
